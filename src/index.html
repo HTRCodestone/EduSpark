@@ -5,29 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduSpark - Home</title>
     <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5a740087a2.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <img class="w-[302.91px] h-[44.80px] left-[32px] top-[42px] absolute" src="../resources/EDUSPARK.svg" />
-    <div class="w-[1320px] left-[300px] top-[288.42px] absolute text-center">
-        <span class="text-slate-900 text-9xl font-bold font-['Helvetica Neue']">All of your child's learning in </span>
-        <span class="text-yellow-500 text-9xl font-bold font-['Helvetica Neue']">one </span>
-        <span class="text-slate-900 text-9xl font-bold font-['Helvetica Neue']">place</span>
-    </div>
-    <div class="w-[540px] h-32 left-[404px] top-[665px] absolute">
-        <div class="w-[540px] h-32 left-0 top-0 absolute bg-sky-600 rounded-2xl"></div>
-        <div class="w-[405px] h-24 left-[67.50px] top-[16px] absolute text-center text-slate-200 text-5xl font-bold font-['Helvetica Neue']">Sign up</div>
-    </div>
-    <div class="w-[540px] h-32 left-[976px] top-[665px] absolute">
-        <div class="w-[540px] h-32 left-0 top-0 absolute bg-cyan-200 rounded-2xl"></div>
-        <div class="w-[405px] h-24 left-[67.50px] top-[16px] absolute text-center text-slate-900 text-5xl font-bold font-['Helvetica Neue']">Learn more</div>
-    </div>
-    <div class="w-32 h-16 left-[1600px] top-[32px] absolute">
-        <div class="w-32 h-16 left-0 top-0 absolute bg-blue-950 rounded-2xl"></div>
-        <div class="w-24 h-12 left-[16px] top-[8px] absolute text-center text-sky-100 text-2xl font-bold font-['Helvetica Neue']">Log in</div>
-    </div>
-    <div class="w-32 h-16 left-[1760px] top-[32px] absolute">
-        <div class="w-32 h-16 left-0 top-0 absolute bg-sky-600 rounded-2xl"></div>
-        <div class="w-24 h-12 left-[16px] top-[8px] absolute text-center text-sky-100 text-2xl font-bold font-['Helvetica Neue']">Sign up</div>
+<body class="text-center m-4 bg-background">
+    <h1 class="text-5xl text-text">EduSpark</h1>
+    <div class="bg-neutral-200 rounded p-4 shadow mt-4 ml-96 mr-96">
+        <form action="get" class="">
+            <input id="code" type="text" class="p-2 rounded w-[100%]" placeholder="Course code">
+            <br><br>
+            <input id="name" type="text" class="p-2 rounded w-[95%]" placeholder="Full course name">
+            <button id="name" type="button" class="p-2 rounded w-10 bg-white"><i class="fa-solid fa-rotate-right"></i></button>
+            <br><br>
+            <input id="grade" type="number" class="p-2 rounded w-[100%]" placeholder="Grade">
+            <br><br>
+            <button type="submit" class="bg-blue-500 p-2 w-[100%] rounded text-white">Submit</button>
+        </form>
     </div>
 </body>
 </html>

@@ -540,135 +540,149 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
+.m-4 {
+  margin: 1rem;
 }
 
-.left-0 {
-  left: 0px;
+.mt-4 {
+  margin-top: 1rem;
 }
 
-.left-\[1600px\] {
-  left: 1600px;
+.ml-16 {
+  margin-left: 4rem;
 }
 
-.left-\[16px\] {
-  left: 16px;
+.mr-16 {
+  margin-right: 4rem;
 }
 
-.left-\[1760px\] {
-  left: 1760px;
+.ml-96 {
+  margin-left: 24rem;
 }
 
-.left-\[300px\] {
-  left: 300px;
+.mr-96 {
+  margin-right: 24rem;
 }
 
-.left-\[32px\] {
-  left: 32px;
+.block {
+  display: block;
 }
 
-.left-\[404px\] {
-  left: 404px;
+.flex {
+  display: flex;
 }
 
-.left-\[67\.50px\] {
-  left: 67.50px;
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 
-.left-\[976px\] {
-  left: 976px;
+.w-\[100\%\] {
+  width: 100%;
 }
 
-.top-0 {
-  top: 0px;
+.w-\[\%\] {
+  width: %;
 }
 
-.top-\[16px\] {
-  top: 16px;
+.w-4 {
+  width: 1rem;
 }
 
-.top-\[288\.42px\] {
-  top: 288.42px;
+.w-12 {
+  width: 3rem;
 }
 
-.top-\[32px\] {
-  top: 32px;
+.w-8 {
+  width: 2rem;
 }
 
-.top-\[42px\] {
-  top: 42px;
+.w-10 {
+  width: 2.5rem;
 }
 
-.top-\[665px\] {
-  top: 665px;
+.w-\[90\%\] {
+  width: 90%;
 }
 
-.top-\[8px\] {
-  top: 8px;
+.w-\[95\%\] {
+  width: 95%;
 }
 
-.h-12 {
-  height: 3rem;
+.w-\[92\%\] {
+  width: 92%;
 }
 
-.h-16 {
-  height: 4rem;
+.w-\[93\%\] {
+  width: 93%;
 }
 
-.h-24 {
-  height: 6rem;
+.w-\[94\%\] {
+  width: 94%;
 }
 
-.h-32 {
-  height: 8rem;
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-.h-\[44\.80px\] {
-  height: 44.80px;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
-.w-24 {
-  width: 6rem;
+.rounded {
+  border-radius: 0.25rem;
 }
 
-.w-32 {
-  width: 8rem;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
-.w-\[1320px\] {
-  width: 1320px;
-}
-
-.w-\[302\.91px\] {
-  width: 302.91px;
-}
-
-.w-\[405px\] {
-  width: 405px;
-}
-
-.w-\[540px\] {
-  width: 540px;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
-.bg-blue-950 {
+.bg-neutral-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(23 37 84 / var(--tw-bg-opacity));
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
-.bg-cyan-200 {
+.bg-background {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.bg-light-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(165 243 252 / var(--tw-bg-opacity));
 }
 
-.bg-sky-600 {
+.bg-neutral-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+  background-color: rgb(115 115 115 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .text-center {
@@ -680,38 +694,35 @@ video {
   line-height: 2rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
-.text-sky-100 {
-  --tw-text-opacity: 1;
-  color: rgb(224 242 254 / var(--tw-text-opacity));
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
-.text-slate-200 {
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
-.text-slate-900 {
+.text-text {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
-.text-yellow-500 {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 :root {

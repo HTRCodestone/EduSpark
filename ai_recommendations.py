@@ -50,6 +50,15 @@ def prompt_report_card(grade, school, grades):
                  Report Card:
                  {report_card}""")
 
+def get_name_from_code(code: str) -> str:
+    return openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are an AI designed to get the full name of a course based on it's course code. For example, MPM2D1 would be Principles of Mathematics. Just send the course name, do not explain."},
+            {"role": "user", "content": f"What is the course name of {code}"}
+        ]
+    )['choices'][0]['message']['content']
+
 print(prompt_report_card("10", "Halton District School Board", [
                          Grade("Math", "MPM2D1", "98.2"),
                          Grade("English", "ENG2D1", "79.3"),
