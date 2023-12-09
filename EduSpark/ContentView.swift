@@ -10,11 +10,20 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack() {
-            Text("All of your child's learning in one place")
-                .font(Font.custom("Helvetica Neue", size: 128).weight(.bold))
+            Text("All of your child's learning ")
                 .foregroundColor(textColor)
-                .offset(x: 0, y: -95.58)
                 .multilineTextAlignment(.center)
+                .font(Font.custom("Helvetica Neue", size: 128).weight(.bold))
+                .offset(y: -125)
+            Text("in ")
+                .foregroundColor(textColor)
+                .font(Font.custom("Helvetica Neue", size: 128).weight(.bold)) +
+            Text("one")
+                    .foregroundColor(Color(red: 0.9176470588235294, green: 0.7019607843137254, blue: 0.03137254901960784))
+                    .font(Font.custom("Helvetica Neue", size: 128).weight(.bold)) +
+            Text(" place")
+                .foregroundColor(textColor)
+                .font(Font.custom("Helvetica Neue", size: 128).weight(.bold))
             ZStack() {
                 Rectangle()
                     .foregroundColor(.clear)
