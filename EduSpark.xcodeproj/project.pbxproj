@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02CD60E12B252248000D4F79 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD60E02B252248000D4F79 /* Globals.swift */; };
 		02D2B42A2B251508007007B4 /* EduSparkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2B4292B251508007007B4 /* EduSparkApp.swift */; };
 		02D2B42C2B251508007007B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2B42B2B251508007007B4 /* ContentView.swift */; };
 		02D2B42E2B251509007007B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D2B42D2B251509007007B4 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02CD60E02B252248000D4F79 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		02D2B4262B251508007007B4 /* EduSpark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduSpark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D2B4292B251508007007B4 /* EduSparkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduSparkApp.swift; sourceTree = "<group>"; };
 		02D2B42B2B251508007007B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				02D2B42D2B251509007007B4 /* Assets.xcassets */,
 				02D2B4322B251509007007B4 /* EduSpark.entitlements */,
 				02D2B42F2B251509007007B4 /* Preview Content */,
+				02CD60E02B252248000D4F79 /* Globals.swift */,
 			);
 			path = EduSpark;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			files = (
 				02D2B42C2B251508007007B4 /* ContentView.swift in Sources */,
 				02D2B42A2B251508007007B4 /* EduSparkApp.swift in Sources */,
+				02CD60E12B252248000D4F79 /* Globals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
