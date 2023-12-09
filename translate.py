@@ -19,7 +19,7 @@ def markdownify(path):
     return markdown
 
 
-pdf_path = 'test.pdf'  # Replace with your PDF file path
+pdf_path = 'secret_report-card.pdf'  # Replace with your PDF file path
 output_dir = "out"    # Replace with your desired output directory
 
 convert_pdf_to_html(pdf_path, output_dir)
