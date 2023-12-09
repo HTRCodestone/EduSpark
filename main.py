@@ -1,42 +1,25 @@
-import os
-import urllib.request
+from flask import Flask, render_template, request
 
-def download_curriculum(subject, grade):
-    def generate_curriculum_url(sub, grd):
-        if sub.lower() == "computer studies":
-            return "https://www.edu.gov.on.ca/eng/curriculum/secondary/computer10to12_2008.pdf"
+app = Flask(__name__)
 
-        if sub.lower() == "english":
-            return f"https://www.edu.gov.on.ca/eng/curriculum/secondary/english{grd}currb.pdf"
+absence_data = {}
 
-        if sub.lower() == "mathematics":
-            return f"https://www.edu.gov.on.ca/eng/curriculum/secondary/math{grd}curr.pdf"
+@app.route('/')
+def index():
+    return render_template('index.html')
 
-        if sub.lower() == "science":
-            if grd in [9, 10]:
-                return "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
-            elif grd in [11, 12]:
-                return "https://www.edu.gov.on.ca/eng/curriculum/secondary/2009science11_12.pdf"
+@app.route('/report_absence', methods=['POST'])
+def report_absence():
+    student_name = request.form.get('student_name')
+    absence_reason = request.form.get('absence_reason')
 
-        grade_str = '910' if grd in [9, 10] else str(grd)
-        return f"https://www.edu.gov.on.ca/eng/curriculum/secondary/{sub.lower()}{grade_str}curr.pdf"
+    absence_data[student_name] = absence_reason
 
-    def download_file(url, destination):
-        urllib.request.urlretrieve(url, destination)
+    return render_template('absence_recorded.html', student_name=student_name, absence_reason=absence_reason)
 
-    # Check if the grade is valid (9, 10, 11, or 12)
-    if grade not in [9, 10, 11, 12]:
-        print("Invalid grade. Please enter a valid grade (9, 10, 11, or 12).")
-        return None
+@app.route('/view_absences')
+def view_absences():
+    return render_template('view_absences.html', absence_data=absence_data)
 
-    # Generate the URL
-    url = generate_curriculum_url(subject, grade)
-
-    # Download the file
-    destination = f"{subject.lower()}_grade{grade}_curriculum.pdf"
-    download_file(url, destination)
-
-    # Return the path
-    return os.path.abspath(destination)
-
-downloaded_file_path = download_curriculum(subject_input, grade_input) # returns path to the file
+if __name__ == '__main__':
+    app.run(debug=True)
