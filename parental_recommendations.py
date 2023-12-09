@@ -26,8 +26,15 @@ def prompt_gpt(prompt: str) -> str:
     return openai.ChatCompletion.create(
         model="gpt-4",
         messages=[
+            {"role": "system", "content": "You are an AI designed to give students and parents recommendations on their school life based on the information they provide you."},
             {"role": "user", "content": prompt}
         ]
     )['choices'][0]['message']['content']
 
-print(prompt_gpt("Hello"))
+def prompt_report_card(grade, school, report_card):
+    return prompt_gpt(f"""Grade: {grade}, School: {school}
+                 
+                 Report Card:
+                 {report_card}""")
+
+print(prompt_report_card("10", "Halton District School Board", "Math: B, English: A-, Science: C+"))
