@@ -540,60 +540,135 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.ml-\[300px\] {
-  margin-left: 300px;
+.absolute {
+  position: absolute;
 }
 
-.mr-4 {
-  margin-right: 1rem;
+.left-0 {
+  left: 0px;
 }
 
-.mr-\[300px\] {
-  margin-right: 300px;
+.left-\[1600px\] {
+  left: 1600px;
 }
 
-.mt-16 {
-  margin-top: 4rem;
+.left-\[16px\] {
+  left: 16px;
 }
 
-.flex {
-  display: flex;
+.left-\[1760px\] {
+  left: 1760px;
 }
 
-.justify-between {
-  justify-content: space-between;
+.left-\[300px\] {
+  left: 300px;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.left-\[32px\] {
+  left: 32px;
 }
 
-.bg-background {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+.left-\[404px\] {
+  left: 404px;
 }
 
-.bg-dark-primary {
+.left-\[67\.50px\] {
+  left: 67.50px;
+}
+
+.left-\[976px\] {
+  left: 976px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-\[16px\] {
+  top: 16px;
+}
+
+.top-\[288\.42px\] {
+  top: 288.42px;
+}
+
+.top-\[32px\] {
+  top: 32px;
+}
+
+.top-\[42px\] {
+  top: 42px;
+}
+
+.top-\[665px\] {
+  top: 665px;
+}
+
+.top-\[8px\] {
+  top: 8px;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-\[44\.80px\] {
+  height: 44.80px;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-\[1320px\] {
+  width: 1320px;
+}
+
+.w-\[302\.91px\] {
+  width: 302.91px;
+}
+
+.w-\[405px\] {
+  width: 405px;
+}
+
+.w-\[540px\] {
+  width: 540px;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.bg-blue-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
 }
 
-.bg-light-primary {
+.bg-cyan-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(165 243 252 / var(--tw-bg-opacity));
 }
 
-.bg-primary {
+.bg-sky-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(2 132 199 / var(--tw-bg-opacity));
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .text-center {
@@ -610,217 +685,35 @@ video {
   line-height: 1;
 }
 
-.text-huge {
+.text-9xl {
   font-size: 8rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.font-black {
-  font-weight: 900;
+  line-height: 1;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
-.text-accent {
+.text-sky-100 {
   --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity));
+  color: rgb(224 242 254 / var(--tw-text-opacity));
 }
 
-.text-primary {
+.text-slate-200 {
   --tw-text-opacity: 1;
-  color: rgb(2 132 199 / var(--tw-text-opacity));
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
-.text-text {
+.text-slate-900 {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-yellow-500 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
 :root {
   font-family: "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
 }
-
-#mainPage {
-  position: absolute;
-  left: -2176px;
-  top: 0px;
-  width: 1920px;
-  height: 1080px;
-  background: #f5f5f5;
-  background-blend-mode: normal;
-}
-
-#allofyourc {
-  position: absolute;
-  left: 300px;
-  top: 288.42px;
-  width: 1320px;
-  height: 312.58px;
-  color: #0f172a;
-  font-family: "Helvetica Neue";
-  font-size: 128px;
-  font-weight: 700;
-  text-align: center;
-}
-
-#group2 {
-  position: absolute;
-  left: 404px;
-  top: 665px;
-  width: 540px;
-  height: 128px;
-}
-
-#rectangle {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 540px;
-  height: 128px;
-  border-radius: 16px;
-  background: #0284c7;
-  background-blend-mode: normal;
-}
-
-#signup {
-  position: absolute;
-  left: 67.5px;
-  top: 16px;
-  width: 405px;
-  height: 96px;
-  color: #e2e8f0;
-  font-family: "Helvetica Neue";
-  font-size: 48px;
-  font-weight: 700;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-#group2Copy {
-  position: absolute;
-  left: 976px;
-  top: 665px;
-  width: 540px;
-  height: 128px;
-}
-
-#rectangle {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 540px;
-  height: 128px;
-  border-radius: 16px;
-  background: #a5f3fc;
-  background-blend-mode: normal;
-}
-
-#learnmore {
-  position: absolute;
-  left: 67.5px;
-  top: 16px;
-  width: 405px;
-  height: 96px;
-  color: #0f172a;
-  font-family: "Helvetica Neue";
-  font-size: 48px;
-  font-weight: 700;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-#group3 {
-  position: absolute;
-  left: 1600px;
-  top: 32px;
-  width: 128px;
-  height: 64px;
-}
-
-#rectangle3 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 128px;
-  height: 64px;
-  border-radius: 16px;
-  background: #172554;
-  background-blend-mode: normal;
-}
-
-#login {
-  position: absolute;
-  left: 16px;
-  top: 8px;
-  width: 96px;
-  height: 48px;
-  color: #e0f2fe;
-  font-family: "Helvetica Neue";
-  font-size: 24px;
-  font-weight: 700;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-#group3Copy {
-  position: absolute;
-  left: 1760px;
-  top: 32px;
-  width: 128px;
-  height: 64px;
-}
-
-#rectangle3 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 128px;
-  height: 64px;
-  border-radius: 16px;
-  background: #0284c7;
-  background-blend-mode: normal;
-}
-
-#signup {
-  position: absolute;
-  left: 16px;
-  top: 8px;
-  width: 96px;
-  height: 48px;
-  color: #e0f2fe;
-  font-family: "Helvetica Neue";
-  font-size: 24px;
-  font-weight: 700;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-#eDUSPARK {
-  position: absolute;
-  left: 32px;
-  top: 42px;
-  width: 302.91px;
-  height: 44.8px;
-  background: #0284c7;
-  background-blend-mode: normal;
-}
-  
