@@ -1,4 +1,6 @@
-from flask import Flask, request, render_template
+from flask import Flask, send_file, request, rebder_template, abort
+import os
+import urllib.request
 from pymongo import MongoClient
 import bleach
 import os
@@ -53,6 +55,25 @@ def create_task():
     tasks_collection.insert_one(task_document)
 
     return 'Task created successfully'
+
+@app.route('/download_curriculum', methods=['GET'])
+def download_curriculum_endpoint():
+    subject = request.args.get('subject')
+    grade = request.args.get('grade')
+
+    # Convert grade to integer if possible
+    try:
+        grade = int(grade)
+    except ValueError:
+        abort(400, description="Invalid grade. Grade must be an integer.")
+
+    # Call the download_curriculum function
+    file_path = download_curriculum(subject, grade)
+
+    if file_path:
+        return send_file(file_path, as_attachment=True)
+    else:
+        abort(400, description="Invalid request parameters.")
 
 def download_curriculum(subject, grade):
     def generate_curriculum_url(sub, grd):
@@ -196,4 +217,4 @@ M IN ENGLISH
     return modified_text
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
