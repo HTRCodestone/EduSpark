@@ -17,3 +17,17 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # Use report card to get recommendations on what to do from GPT-4
 
+import openai
+
+with open("secret_openai-api-key", "r") as f:
+    openai.api_key = f.read()
+
+def prompt_gpt(prompt: str) -> str:
+    return openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[
+            {"role": "user", "content": prompt}
+        ]
+    )['choices'][0]['message']['content']
+
+print(prompt_gpt("Hello"))
