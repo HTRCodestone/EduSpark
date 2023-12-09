@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absence System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 style="text-align: center;">Absence System</h1>
+    <form action="/report_absence" method="post">
+        <label for="student_name">Student Name:</label>
+        <input type="text" name="student_name" required>
+        <br>
+        <label for="absence_reason">Absence Reason:</label>
+        <select name="absence_reason" required>
+            <option value="Illness">Illness</option>
+            <option value="Family Emergency">Family Emergency</option>
+            <option value="Personal Reasons">Personal Reasons</option>
+        </select>
+        <br>
+        <input type="submit" value="Report Absence">
+    </form>
+    <br>
+    <p style="text-align: center;">
+        <a href="/view_absences">View Absences</a>
+    </p>
+</body>
+</html>

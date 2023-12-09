@@ -45,21 +45,65 @@ def process_markdown(input_md, output_md):
     with open(input_md, 'r', encoding='utf-8') as file:
         md_content = file.read()
 
-    # Fixing hyphenated line breaks
-    md_content = re.sub(r'(\w)-\n(\w)', r'\1\2', md_content)
+    # Remove all HTML comments
+    md_content = re.sub(r'<!--.*?-->', '', md_content, flags=re.DOTALL)
 
-    # Correcting headers: Assuming headers are in the style '*Header Name:*'
-    md_content = re.sub(r'\*(.+):\*', r'## \1', md_content)
+    # Reduce multiple new lines to two
+    md_content = re.sub(r'\n{3,}', '\n\n', md_content)
 
-    # Fixing list formatting: Assuming lists are in the style '* list item'
-    md_content = re.sub(r'\n\* ', r'\n- ', md_content)
+    # Remove a specific string
+    specific_string = 'C:\\Users\\egeke\\Desktop\\Development Files\\Project\\test\\output-html.html'
+    md_content = md_content.replace(specific_string, '')
 
-    # Combine separated header letters into a single line
-    md_content = re.sub(r'(\b[A-Za-z]\b)\n-+\n\n\n(\b[A-Za-z]\b)', r'\1\2', md_content)
+    # Combine fragmented header lines
+    md_content = re.sub(r'((?:\b[A-Za-z]+\b\n-+\n\n\n)+)([A-Za-z ]+)\n-+', lambda m: " ".join(m.group(0).split()) + '\n', md_content)
+
+    # Replace text
+    md_content = replace_text(md_content)
 
     # Write the processed Markdown to a new file
     with open(output_md, 'w', encoding='utf-8') as file:
         file.write(md_content)
+
+def replace_text(original_text):
+    # Define the first text to be replaced and its replacement
+    text_to_replace_1 = '''THE ONT
+-------
+
+A
+-
+
+RIO CURRICUL
+------------
+
+UM,
+---
+
+GR
+--
+
+ADES 9 AND 10
+-------------'''
+    replacement_text_1 = '''THE ONTARIO CURRICULUM,GRADES 9 AND 10
+--------------------------------------'''
+
+    # Define the second text to be replaced and its replacement
+    text_to_replace_2 = '''THE PROGR
+---------
+
+A
+-
+
+M IN ENGLISH
+------------'''
+    replacement_text_2 = '''THE PROGRAM IN ENGLISH
+----------------------'''
+
+    # Replace the texts
+    modified_text = original_text.replace(text_to_replace_1, replacement_text_1)
+    modified_text = modified_text.replace(text_to_replace_2, replacement_text_2)
+
+    return modified_text
 
 pdf_path = 'test.pdf'  # Replace with your PDF file path
 output_dir = r'C:\Users\egeke\Desktop\Development Files\Project\test'    # Replace with your desired output directory
