@@ -19,6 +19,15 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import openai
 
+class Grade:
+    def __init__(self, name, code, grade) -> None:
+        self.name = name
+        self.code = code
+        self.grade = grade
+
+    def __str__(self) -> str:
+        return f"{self.name} ({self.code}): {self.grade}%"
+
 with open("secret_openai-api-key", "r") as f:
     openai.api_key = f.read()
 
@@ -31,10 +40,18 @@ def prompt_gpt(prompt: str) -> str:
         ]
     )['choices'][0]['message']['content']
 
-def prompt_report_card(grade, school, report_card):
+def prompt_report_card(grade, school, grades):
+    report_card = ""
+    for grade in grades:
+        report_card += str(grade) + '\n'
+
     return prompt_gpt(f"""Grade: {grade}, School: {school}
                  
                  Report Card:
                  {report_card}""")
 
-print(prompt_report_card("10", "Halton District School Board", "Math: B, English: A-, Science: C+"))
+print(prompt_report_card("10", "Halton District School Board", [
+                         Grade("Math", "MPM2D1", "98.2"),
+                         Grade("English", "ENG2D1", "79.3"),
+                         Grade("Science", "SNC2O1", "87.8"),
+                         Grade("History", "HTY2W1", "69.1")]))
