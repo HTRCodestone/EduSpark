@@ -34,7 +34,7 @@ def pdf_to_text_with_structure(pdf_path, text_file_path):
 
 
 # Example usage:
-pdf_path = r'C:\Users\arnna\Downloads\english910currb.pdf'
-text_file_path = r'C:\Users\arnna\Downloads\ez.txt'
+pdf_path = "secret_report-card.pdf"
+text_file_path = "out.txt"
 
 pdf_to_text_with_structure(pdf_path, text_file_path)
