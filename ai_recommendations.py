@@ -18,6 +18,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 # Use report card to get recommendations on what to do from GPT-4
 
 import openai
+from flask import Flask
+
+app = Flask(__name__)
 
 class Grade:
     def __init__(self, name, code, grade) -> None:
@@ -50,6 +53,7 @@ def prompt_report_card(grade, school, grades):
                  Report Card:
                  {report_card}""")
 
+@app.route("/get_code")
 def get_name_from_code(code: str) -> str:
     return openai.ChatCompletion.create(
         model="gpt-4",
@@ -59,8 +63,37 @@ def get_name_from_code(code: str) -> str:
         ]
     )['choices'][0]['message']['content']
 
+print("EduSpark is getting your tips ready...")
+
+
+
+
+
+
+# EduSpark helps you with your school life using intelligent AI to analyze
+# your academics. This can include your report card, as shown below.
+
+
+
 print(prompt_report_card("10", "Halton District School Board", [
                          Grade("Math", "MPM2D1", "98.2"),
                          Grade("English", "ENG2D1", "79.3"),
                          Grade("Science", "SNC2O1", "87.8"),
                          Grade("History", "HTY2W1", "69.1")]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# if __name__ == "__main__": app.run()

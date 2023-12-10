@@ -6,6 +6,17 @@
     <title>EduSpark - Home</title>
     <link href="/dist/output.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5a740087a2.js" crossorigin="anonymous"></script>
+
+    <script>
+        function get_name_from_code() {
+            const code = "MPM2D1"; // Replace with your desired course code
+            
+            fetch("/get_code?code=" + code)
+                .then(response => response.text())
+                .then(data => console.log(data))
+                .catch(error => console.error(error));
+        }
+      </script>
 </head>
 <body class="text-center m-4 bg-background">
     <h1 class="text-5xl text-text">EduSpark</h1>
@@ -14,7 +25,7 @@
             <input id="code" type="text" class="p-2 rounded w-[100%]" placeholder="Course code">
             <br><br>
             <input id="name" type="text" class="p-2 rounded w-[95%]" placeholder="Full course name">
-            <button id="name" type="button" class="p-2 rounded w-10 bg-white"><i class="fa-solid fa-rotate-right"></i></button>
+            <button id="name" type="button" class="p-2 rounded w-10 bg-white" onclick="get_name_from_code()"><i class="fa-solid fa-rotate-right"></i></button>
             <br><br>
             <input id="grade" type="number" class="p-2 rounded w-[100%]" placeholder="Grade">
             <br><br>
