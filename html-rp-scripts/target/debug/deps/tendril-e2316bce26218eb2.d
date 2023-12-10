@@ -1,0 +1,11 @@
+C:\Users\egeke\Desktop\Development Files\Project\html-rp-scripts\target\debug\deps\tendril-e2316bce26218eb2.rmeta: C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\lib.rs C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\fmt.rs C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\stream.rs C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\buf32.rs C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\tendril.rs C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\utf8_decode.rs C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\util.rs
+
+C:\Users\egeke\Desktop\Development Files\Project\html-rp-scripts\target\debug\deps\tendril-e2316bce26218eb2.d: C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\lib.rs C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\fmt.rs C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\stream.rs C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\buf32.rs C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\tendril.rs C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\utf8_decode.rs C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\util.rs
+
+C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\lib.rs:
+C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\fmt.rs:
+C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\stream.rs:
+C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\buf32.rs:
+C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\tendril.rs:
+C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\utf8_decode.rs:
+C:\Users\egeke\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tendril-0.4.3\src\util.rs:

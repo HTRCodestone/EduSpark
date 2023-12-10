@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Absences</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="view-absences-container">
+        <h1>View Absences</h1>
+        <table class="absence-table">
+            <tr>
+                <th>Student Name</th>
+                <th>Absence Reason</th>
+            </tr>
+            {% for student, reason in absence_data.items() %}
+            <tr>
+                <td>{{ student }}</td>
+                <td>{{ reason }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br>
+        <a href="/absences">Go Back</a>
+    </div>
+</body>
+</html>
